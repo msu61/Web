@@ -1,0 +1,137 @@
+<html>
+<head>
+<META HTTP-EQUIV="content-type" content="text/html; charset=utf-8">
+<style>
+
+
+	/*--logo 및 홍보 슬라이드 구역--*/
+	header {        										 
+
+		position:absolute;
+		float:right;
+		width:100%;
+		margin-bottom:10px;
+		text-align:center;
+		height:100px;
+	}
+
+	/*--메뉴네비게이터--*/	
+	nav.A{  												
+		float:right;
+		position:relative;
+		width:100%;
+		height:100px;
+		background : linear-gradient( to bottom ,#5050ff,#AFDDFA );
+		align-content:right;
+	}
+
+
+	/*-- 로고부분 속성값--*/
+	div.logo{													
+		border-style:solid;
+		background-color:#fff;
+		border-color:red;
+		width:20%;
+		height:60px;
+		float:left;
+	}
+
+
+	/*--메인메뉴버튼 하나의 기본값---*/
+	.Button{                  									
+		display:inline;
+		list-style:none;
+		font-size:23;
+		margin:6px;
+		background-color:transparent;
+		border:none;
+		width:136px;
+		height:44px;
+	}
+
+
+
+	/*-- 서브리스트를 묶어주는 ul의 기본값--*/
+	.subC{              										
+		position:absolute;
+
+		list-style:none;
+		margin:0;
+		padding:0;
+		font-size:20;
+		display:none;
+		background-color:transparent;
+		border:none;
+		width:1000px;
+		height:44px;
+
+	}
+
+
+	/*----------서브리스트의 기본값-------------*/
+	.subC li{               									
+		display:inline-block;
+		float:left;
+		border:solid white 2px;
+	}
+
+
+	/*--------------회원관리에 마우스를 올렷을때 subC클레스의 Display Property를 변경함 안보이던 서브리스트를 보이게 함 */
+	.Custom_M:hover .subC{ 										
+		display:block;
+		
+	}
+
+
+	/*----------------서브메뉴에 마우스 오버시 불투명도 조절---*/
+	.subc li:hover{ 											
+		opacity:0.6;
+	}
+
+
+
+	/*--------------------메인 메뉴의 기본값 (회원관리 데이터 관리)---*/
+	.button{ 													
+			
+		list-style:none;
+		margin:0;
+		padding:0;
+		display:inline;
+	}	
+
+
+	/*----------------------메인과 서브 메뉴의 정렬---*/
+	ul li{ 														
+		display:inline;
+		margin:10px;
+		padding:10px;
+		border:0;
+	}
+
+
+
+</style>
+
+</head>
+<div class="logo">LOGO</div>
+<header>	
+logo및 홍보 슬라이드 구역
+</header>
+<nav class="A">
+<ul class="button">
+	<li class="Custom_M">회원관리
+		<ul class="subC">
+			<li>아이디 관리</li>
+			<li>농가아이디 관리</li>
+			<li>영업 아이디 관리</li>
+		</ul>
+	</li>
+	
+</ul>
+<ul class="button"><li class="Data_M">데이터 관리</li></ul>
+	
+
+
+
+<body></body>
+</html>
